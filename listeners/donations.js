@@ -169,7 +169,8 @@ async function updateDonationsCounter() {
       if (playerData.CurrentClan == "NOT IN THE ALLIANCE" && player.clan && clanTags.includes(player.clan.tag)) {
         await updateCurrentClan(player);
       }
-       
+      
+      await delay(20)
     } catch (error) {
       console.error(`CUSTOM ERROR: Failed to process player ${tag}:`, error);
     }

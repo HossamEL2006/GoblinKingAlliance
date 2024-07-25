@@ -27,7 +27,5 @@ module.exports = {
 		}
 
 		await interaction.reply(message)
-
-		// await console.log(`${player.name}\n${}`)
 	},
 };
