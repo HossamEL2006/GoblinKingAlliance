@@ -135,6 +135,7 @@ async function updateDonationsCounter() {
 
     try {
       let player = await cocClient.getPlayer(tag);
+      await delay(40)
       console.log("Tracking donations for " + player.name)
       let donations = player.donations;
 
@@ -170,8 +171,6 @@ async function updateDonationsCounter() {
       if (playerData.CurrentClan == "NOT IN THE ALLIANCE" && player.clan && clanTags.includes(player.clan.tag)) {
         await updateCurrentClan(player);
       }
-      
-      await delay(30)
     } catch (error) {
       console.error(`CUSTOM ERROR: Failed to process player ${tag}:`, error);
     }
