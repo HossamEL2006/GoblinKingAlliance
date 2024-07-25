@@ -170,7 +170,7 @@ async function updateDonationsCounter() {
         await updateCurrentClan(player);
       }
       
-      await delay(20)
+      await delay(40)
     } catch (error) {
       console.error(`CUSTOM ERROR: Failed to process player ${tag}:`, error);
     }
