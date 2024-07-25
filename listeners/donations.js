@@ -114,6 +114,7 @@ async function createDocsForNewMembers() {
           await addPlayerToDonationsDB(player); // Ensure the document is added before proceeding
         }
       }
+      await delay(40)
     } catch (error) {
       console.error(
         `CUSTOM ERROR: Failed to process and fetch members from ${clanTags[i]}:\n`,
